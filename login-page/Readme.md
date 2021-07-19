@@ -1,1 +1,1 @@
-![Sample](./images/sample1.png)
+![Sample](./images/login_sample1.png)
