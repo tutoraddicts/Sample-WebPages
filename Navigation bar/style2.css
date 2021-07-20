@@ -1,0 +1,130 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row{display: flex;width: 100%;}
+.col-1 {width: 8.33%};
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+button:hover
+{
+    cursor: pointer;
+}
+
+nav 
+{
+    height: 60px;
+    padding: 10px;
+
+    background-color: rgb(75, 74, 74);
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+nav .btn
+{
+    background-color: transparent;
+    border: 0;
+    margin: 5px;
+}
+
+nav a
+{
+    color: black;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.main_menu
+{
+    position: relative;
+    display: flex;
+}
+
+.dropdown
+{
+    position: relative;
+    /* display: inline-flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.dropdown ul
+{
+    position: absolute;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+
+    width:100px;
+    height: auto;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    list-style: none;
+
+    /* Transition area */
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px); 
+    transition: all 0.4s ease;
+}
+
+.dropdown li
+{
+    width: 100%;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdown li:hover
+{
+    background-color: gray;
+}
+
+.dropdown button:focus + ul
+{
+    opacity: 100;
+    transform: translateY(0px);
+    pointer-events: all;
+}
+
+.login_register
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.login_register button
+{
+    margin: 5px;
+    padding: 5px;
+    width: 80px;
+    background-color: white;
+    border-radius: 10px;
+    border: 0;
+}
