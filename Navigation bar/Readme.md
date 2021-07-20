@@ -4,12 +4,12 @@
  
 # Sample 1
 
-[!Navigation1](./images/navigation1.png)
+![Navigation1](./images/navigation1.png)
 
 # Sample 2
 
-[!Navigation1](./images/navigation2.png)
+![Navigation1](./images/navigation2.png)
 
 # Sample 3
 
-[!Navigation1](./images/navigation3.png)
+![Navigation1](./images/navigation3.png)
