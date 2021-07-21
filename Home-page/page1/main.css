@@ -144,6 +144,16 @@ header {
     animation: hide 0.4s;
 }
 
+.dropdown-items:hover {
+    display: inline-flex;
+    flex-direction: column;
+    /* flex-direction: column; */
+    min-width: 100px;
+    position: absolute;
+    background-color: #f1f1f1;
+    pointer-events: all;
+}
+
 @keyframes hide {
     0%,
     60% {
@@ -213,12 +223,16 @@ header {
     text-align: center;
 }
 
+main {
+    min-height: 86.6vh;
+}
+
 footer {
     width: 100%;
     height: fit-content;
     /* background-color: blanchedalmond; */
     display: block;
-    position: inherit;
+    position: inline-block;
     bottom: 0;
 }
 

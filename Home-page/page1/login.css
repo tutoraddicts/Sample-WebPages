@@ -1,0 +1,56 @@
+.login-form {
+    position: absolute;
+    min-height: fit-content;
+    max-width: 400px;
+    background: linear-gradient(rgba(83, 83, 83, 0.212), rgba(202, 202, 202, 0.1));
+    padding: 15px;
+    margin-top: 20vh;
+    margin-left: 5vh;
+    box-shadow: 5px 10px 15px rgba(255, 255, 255, 0.11), 10px 15px 20px rgb(20, 20, 20);
+    animation: login-form-slide 2s;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    position: inherit;
+    color: white;
+}
+
+.login-form input {
+    margin: 5px 0px;
+    width: 100%;
+    border-radius: 2px;
+    border: 0;
+    padding: 2px;
+}
+
+.submit {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.submit input[type=submit] {
+    min-height: 30px;
+    min-width: 60px;
+    max-width: 60px;
+    background: rgb(196, 27, 27);
+    border: 0;
+    border-radius: 2px;
+}
+
+@keyframes login-form-slide {
+    0% {
+        opacity: 0;
+        margin-top: 20vh;
+        margin-left: 0vh;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 20vh;
+        margin-left: 5vh;
+    }
+}
